@@ -1,13 +1,13 @@
-
-# Hackintosh on the Dell Inspiron 15 3542
-Repository containing personal files needed to run macOS Catalina on the Dell Inspiron 15 3542, still a work in progress so don't use this as your daily driver!
+## Hackintosh on the Dell Inspiron 15 3542
+Repository containing personal files necessary to run macOS Catalina on the Dell Inspiron 15 3542, still a work in progress so don't use this as your daily driver!
 
 <p align="center">
-  <img src="https://github.com/filemanager1/Hackintosh-OpenCore-EFI-Dell-Inspiron-3542/blob/main/Unrelated/Laptop.png?raw=true" alt="Your Hackintosh will look like this!"/>
+	<img  src="https://github.com/filemanager1/Hackintosh-OpenCore-EFI-Dell-Inspiron-3542/blob/main/Unrelated/Laptop.png?raw=true"  alt="Your Hackintosh will look like this!"/>
 </p>
 
 ## Hardware configuration
-Your laptop should have specifications similar to the ones listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wireless card you'll have to configure it yourself, **no support is provided at all**.
+Your laptop should have specifications similar to the one listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wireless card you'll have to configure it yourself, **no support is provided at all**.
+
 |Specification|Detail|
 |--|--|
 |Model|Inspiron 3542|
@@ -27,7 +27,6 @@ Your laptop should have specifications similar to the ones listed in the table b
 * USB ports
 	* Two 2.0 USB ports and one 3.0 USB port
 * iGPU - Intel HD 4400
-	* Can run up to 4K @ 24 Hz via the HDMI port
 * Full hardware acceleration
 	* This also includes hardware accelerated decoding and encoding
 * Sleep and wake
@@ -47,8 +46,6 @@ Your laptop should have specifications similar to the ones listed in the table b
 	* You can even turn off the backlight completely
 
 ## What doesn't work or has issues
-* DRM
-	* Anything that relies on hardware DRM doesn't work
 * Wi-Fi
 	* Network speed is halved, Wi-Fi icon always shows poor reception no matter how close you're to the access point.
 * Bluetooth
@@ -69,8 +66,21 @@ Your laptop should have specifications similar to the ones listed in the table b
 	* I've a worn out battery
 * Anything related to iServices or continuity between several iDevices
 	* I don't have any Apple devices
+* DRM
 
-## Notice
+## If you plan on using this, read this first
+* To get sleep and wake working properly you have to make some changes in the BIOS. Go to the Advanced tab and make sure your settings look like what I've written below:
+	* Intel(R)SpeedStep(TM): **Disabled**
+	* Integrated NIC: **Enabled**
+	* Virtualization: **Enabled**
+	* USB Emulation: **Disabled**
+	* USB Wake Support: **Disabled**
+	* SATA Operation: **AHCI**
+
+* There's also one small setting you have to change in Miscellaneous Devices:
+	* External USB Ports: **Enabled**
+	* USB debug: **Disabled**
+
 * My `config.plist` has some invalid SMBIOS values, **this is done on purpose**, you'll have to generate your own using [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)!
 	* Guide yourself using what's written on [OpenCore's config.plist Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo).
 	* Use `MacBookAir8,1` as model when requested.
