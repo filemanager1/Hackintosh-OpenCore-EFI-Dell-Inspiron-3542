@@ -7,7 +7,7 @@ Repository containing personal files needed to run macOS Catalina on the Dell In
 </p>
 
 ## Hardware configuration
-Your laptop should have specs similar to the ones listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wi-Fi/Bluetooth card you'll have to set it and make the changes yourself, **no support is provided at all**.
+Your laptop should have specifications similar to the ones listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wireless card you'll have to configure it yourself, **no support is provided at all**.
 |Specification|Detail|
 |--|--|
 |Model|Inspiron 3542|
