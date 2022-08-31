@@ -1,7 +1,10 @@
 
 # Hackintosh on the Dell Inspiron 15 3542
 Repository containing personal files needed to run macOS Catalina on the Dell Inspiron 15 3542, still a work in progress so don't use this as your daily driver!
-![Your Hackintosh will look something like this!](https://i.postimg.cc/25pG0Dx0/Laptop.png)
+
+<p align="center">
+  <img src="https://github.com/parhelia3/Hackintosh-OpenCore-EFI-Dell-Inspiron-3542/blob/main/Unrelated/Laptop.png?raw=true" alt="Your Hackintosh will look like this!"/>
+</p>
 
 ## Hardware configuration
 Your laptop should have specs similar to the ones listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wi-Fi/Bluetooth card you'll have to set it and make the changes yourself, **no support is provided at all**.
