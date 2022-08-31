@@ -47,6 +47,8 @@ Your laptop should have specifications similar to the ones listed in the table b
 	* You can even turn off the backlight completely
 
 ## What doesn't work or has issues
+* DRM
+	* Anything that relies on hardware DRM doesn't work
 * Wi-Fi
 	* Network speed is halved, Wi-Fi icon always shows poor reception no matter how close you're to the access point.
 * Bluetooth
@@ -67,8 +69,6 @@ Your laptop should have specifications similar to the ones listed in the table b
 	* I've a worn out battery
 * Anything related to iServices or continuity between several iDevices
 	* I don't have any Apple devices
-* DRM
-	* Anything that relies on hardware DRM doesn't work
 
 ## If you plan on using, read this first
 * My `config.plist` has invalid SMBIOS values, **this is done on purpose**, you'll have to generate your own using [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)!
