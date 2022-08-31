@@ -4,7 +4,7 @@ Repository containing personal files needed to run macOS Catalina on the Dell In
 ![Your Hackintosh will look something like this!](https://i.postimg.cc/25pG0Dx0/Laptop.png)
 
 ## Hardware configuration
-Your laptop should have specs similar to the ones listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wi-Fi/Bluetooth card you'll have to set it and make the changes yourself, no support is provided at all.
+Your laptop should have specs similar to the ones listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wi-Fi/Bluetooth card you'll have to set it and make the changes yourself, **no support is provided at all**.
 |Specification|Detail|
 |--|--|
 |Model|Inspiron 3542|
@@ -18,6 +18,8 @@ Your laptop should have specs similar to the ones listed in the table below for 
 
 ## What works
 * macOS Catalina (10.15)
+* Keyboard
+* Touchpad
 * USB ports
 	* Two 2.0 USB ports and one 3.0 USB port
 * iGPU - Intel HD 4400
@@ -38,15 +40,15 @@ Your laptop should have specs similar to the ones listed in the table below for 
 
 ## What doesn't work or has issues
 * Wi-Fi
-	* Network speed is halved, Wi-Fi icon always shows up 1 bar no matter how close you're to the access point.
+	* Network speed is halved, Wi-Fi icon always shows poor reception no matter how close you're to the access point.
 * Ethernet
 	* The .kext that I use has minor stability issues, this should be an easy fix though.
 * Bluetooth
-	* Doesn't work at all; Qualcomm Atheros support is poor on macOS.
+	* Doesn't work at all.
 * macOS 11+
 	* Can't get it to boot, though people have gotten Monterey working on this model. I'll have to investigate why.
 * Wake on USB
-	* When the laptop goes to sleep it fully shutdows every USB port. If you need to wake up the laptop you have to press the power button.
+	* When the laptop goes to sleep it fully shutdowns every USB port. If you need to wake up the laptop you have to press the power button.
 
 ## What I haven't tested yet
 * Touch
