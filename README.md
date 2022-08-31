@@ -70,8 +70,7 @@ Your laptop should have specifications similar to the ones listed in the table b
 * Anything related to iServices or continuity between several iDevices
 	* I don't have any Apple devices
 
-## If you plan on using, read this first
-* My `config.plist` has invalid SMBIOS values, **this is done on purpose**, you'll have to generate your own using [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)!
+## Notice
+* My `config.plist` has some invalid SMBIOS values, **this is done on purpose**, you'll have to generate your own using [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)!
 	* Guide yourself using what's written on [OpenCore's config.plist Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo).
 	* Use `MacBookAir8,1` as model when requested.
-	* Replace every value `01234567 89` with their valid counterpart!
