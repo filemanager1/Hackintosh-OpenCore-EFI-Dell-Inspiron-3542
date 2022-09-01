@@ -21,7 +21,7 @@ Your laptop should have specifications similar to the one listed in the table be
 |Ethernet Controller|Realtek RTL8106E|
 
 ## What works
-* macOS Catalina (10.15)
+* macOS Catalina (10.15.7)
 * Keyboard
 * Touchpad
 * USB ports
@@ -51,14 +51,13 @@ Your laptop should have specifications similar to the one listed in the table be
 * Bluetooth
 	* Doesn't work at all.
 * AirPlay
-	* This is due to the Wireless chip, there's nothing to do about it.
+	* Doesn't work at all.
 * macOS 11+
-	* Can't get it to boot, though people have gotten Monterey working on this model. I'll have to investigate why.
+	* Can't get it to boot. I'll have to investigate why.
 * Wake on USB
 	* When the laptop goes to sleep it fully shutdowns every USB port. If you need to wake up the laptop you have to press the power button.
 
 ## What I haven't tested yet
-* OpenCore GUI
 * OpenCore Boot Chime
 * Touch
 	* I've a broken digitizer
@@ -70,7 +69,7 @@ Your laptop should have specifications similar to the one listed in the table be
 
 ## If you plan on using this, read this first
 * To get sleep and wake working properly you have to make some changes in the BIOS. Go to the Advanced tab and make sure your settings look like what I've written below:
-	* Intel(R)SpeedStep(TM): **Disabled**
+	* Intel(R)SpeedStep(TM): **Enabled**
 	* Integrated NIC: **Enabled**
 	* Virtualization: **Enabled**
 	* USB Emulation: **Disabled**
