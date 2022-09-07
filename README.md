@@ -1,12 +1,12 @@
 ## Hackintosh on the Dell Inspiron 15 3542
-Repository containing personal files necessary to run macOS Catalina on the Dell Inspiron 15 3542, still a work in progress so don't use this as your daily driver!
+Repository containing files necessary to run macOS Catalina on the Dell Inspiron 15 3542, I would **NOT** recommend using this as your daily driver!
 
 <p align="center">
 	<img  src="https://github.com/filemanager1/Hackintosh-OpenCore-EFI-Dell-Inspiron-3542/blob/main/Unrelated/Laptop.png?raw=true"  alt="Your Hackintosh will look like this!"/>
 </p>
 
 ## Hardware configuration
-Your laptop should have specifications similar to the one listed in the table below for this to be compatible, if you laptop has a dGPU or a different Wireless card you'll have to configure it yourself, **no support is provided at all**.
+Your laptop should have specifications similar to the one listed in the table below for this to be compatible, if you laptop has a dGPU or a different wireless card you'll have to configure it yourself, **no support is provided at all**.
 
 |Specification|Detail|
 |--|--|
@@ -55,10 +55,10 @@ Your laptop should have specifications similar to the one listed in the table be
 * macOS 11+
 	* Can't get it to boot. I'll have to investigate why.
 * Wake on USB
+	* Thanks to the DVD drive, the laptop won't suspend if you enable "USB Wake Support" on the BIOS; so we have to disable it.
 	* When the laptop goes to sleep it fully shutdowns every USB port. If you need to wake up the laptop you have to press the power button.
 
 ## What I haven't tested yet
-* OpenCore Boot Chime
 * Touch
 	* I've a broken digitizer
 * Power management
