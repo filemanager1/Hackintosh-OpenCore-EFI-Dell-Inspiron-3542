@@ -1228,7 +1228,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1390,7 +1390,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacBookAir8,1</string>
+			<string>MacBookAir6,1</string>
 			<key>SystemSerialNumber</key>
 			<string>01234567 89</string>
 			<key>SystemUUID</key>
