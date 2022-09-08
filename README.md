@@ -52,20 +52,15 @@ Your laptop should have specifications similar to the one listed in the table be
 	* Doesn't work at all.
 * AirPlay
 	* Doesn't work at all.
-* macOS 11+
-	* Can't get it to boot. I'll have to investigate why.
 * Wake on USB
 	* Thanks to the DVD drive, the laptop won't suspend if you enable "USB Wake Support" on the BIOS; so we have to disable it.
-	* When the laptop goes to sleep it fully shutdowns every USB port. If you need to wake up the laptop you have to press the power button.
+	* This causes the laptop to fully shut down **every** USB port. If you need to wake up the laptop you have to press the power button.
 
 ## What I haven't tested yet
 * Touch
 	* I've a broken digitizer
-* Power management
-	* I've a worn out battery
 * Anything related to iServices or continuity between several iDevices
 	* I don't have any Apple devices
-* DRM
 
 ## If you plan on using this, read this first
 * To get sleep and wake working properly you have to make some changes in the BIOS. Go to the Advanced tab and make sure your settings look like what I've written below:
@@ -82,4 +77,4 @@ Your laptop should have specifications similar to the one listed in the table be
 
 * My `config.plist` has some invalid SMBIOS values, **this is done on purpose**, you'll have to generate your own using [corpnewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)!
 	* Guide yourself using what's written on [OpenCore's config.plist Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo).
-	* Use `MacBookAir8,1` as model when requested.
+	* Use `MacBookAir6,1` as model when requested.
