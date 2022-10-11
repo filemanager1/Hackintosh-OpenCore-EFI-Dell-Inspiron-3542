@@ -206,7 +206,7 @@
 					<key>DisableDevice</key>
 					<false/>
 					<key>ForceTouchMode</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>MouseResolution</key>
 					<integer>3</integer>
 					<key>MouseSampleRate</key>
@@ -420,7 +420,7 @@
 					<key>ForceTouchCustomUpThreshold</key>
 					<integer>20</integer>
 					<key>ForceTouchMode</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>ForceTouchPressureThreshold</key>
 					<integer>100</integer>
 					<key>MiddleClickTime</key>
